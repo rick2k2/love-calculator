@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Love calculator|| Developer Rick </title>
+  <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+  <div class="calculator_container">
+    <div class="calculator_des">
+      <br><br>
+      <h2>Love Calculator</h2>
+      <p>~~By Rick saha</p>
+      <div class="line">
+      </div>
+        <div class="input_form_container">
+           <div class="input_design">
+            <div class="yname">
+              <label class="te">your name</label><br>
+              <input type="text" name="" placeholder="Enter your name" id="y_name"><br>
+            </div>
+            <div>
+              <span class="plus_icon">+</span>
+            </div>
+            <div class="cname">
+              <label class="te">your crush</label><br>
+              <input type="text" name="" placeholder="Enter your crush name" id="c_name">
+            </div>
+           </div>
+           <div class="btn_div">
+            <button class="btn" onclick="checklove()">Check Love <span class="love_icon">&hearts;</span></button>
+           </div>
+          </div>
+    </div>
+
+    <div class="result">
+      <br>
+      <label class="te">Result</label>
+      <p class="result_txt" id="res">Love value in %</p> 
+      <br>
+    </div>
+    <div class="last">
+      <p>**God bless Your Relationship**</p>
+    </div>
+  </div>
+
+  <!-- javascript code here -->
+  <script type="text/javascript">
+    function checklove() {
+      res = parseInt(Math.random()*100);
+      document.getElementById("res").innerHTML = res+'%';
+      document.addEventListener('contextmenu', event => event.preventDefault());
+    }
+  </script>
+</body>
+</html>
